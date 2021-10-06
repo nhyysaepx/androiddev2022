@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ForecastFragment#newInstance} factory method to
@@ -58,9 +61,20 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_forecast, container, false);
-        v.setBackgroundColor(0x80FF0000);
-        return v;
+        LinearLayout thursday_layout = new LinearLayout(getActivity());
+        thursday_layout.setBackgroundColor(0x200000FF);
+        thursday_layout.setOrientation(thursday_layout.VERTICAL);
+
+        TextView thursday = new TextView(getActivity());
+        thursday.setText("Sunny on Thursday.");
+        ImageView sun = new ImageView(getActivity());
+        sun.setImageResource(R.drawable.sun);
+
+        thursday_layout.addView(thursday);
+        thursday_layout.addView(sun);
+
+        return thursday_layout;
     }
 }

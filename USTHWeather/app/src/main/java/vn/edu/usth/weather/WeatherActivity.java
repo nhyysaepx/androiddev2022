@@ -1,11 +1,9 @@
 package vn.edu.usth.weather;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -17,6 +15,7 @@ public class WeatherActivity extends AppCompatActivity {
         ForecastFragment firstFragment = new ForecastFragment();
         // Add the fragment to the 'container' FrameLayout
         getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
+        Log.i("Weather", "onCreate() called");
     }
 
     @Override
@@ -47,10 +46,5 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("Weather", "onDestroy() called");
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
     }
 }
