@@ -62,179 +62,178 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Main layout
-        LinearLayout main_layout = new LinearLayout(getActivity());
-        main_layout.setBackgroundColor(0x100000FF);
-        main_layout.setOrientation(LinearLayout.VERTICAL);
+        LinearLayout mainlayout = new LinearLayout(getActivity());
+        mainlayout.setBackgroundColor(0x100000FF);
+        mainlayout.setOrientation(LinearLayout.VERTICAL);
 
         // Scroll
-        ScrollView scroll_layout = new ScrollView(getActivity());
-        scroll_layout.addView(main_layout);
+        ScrollView scrl_layout = new ScrollView(getActivity());
+        scrl_layout.addView(mainlayout);
 
         // Monday layout
-        LinearLayout monday_layout = new LinearLayout(getActivity());
-        monday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView monday = new TextView(getActivity());
-        ImageView monday_weather = new ImageView(getActivity());
-        LinearLayout monday_descriptions = new LinearLayout(getActivity());
-        monday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView monday_weather_des = new TextView(getActivity());
-        TextView monday_temperature_des = new TextView(getActivity());
+        LinearLayout mon_layout = new LinearLayout(getActivity());
+        mon_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView mon = new TextView(getActivity());
+        ImageView mon_weather = new ImageView(getActivity());
+        LinearLayout mon_descriptions = new LinearLayout(getActivity());
+        mon_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView mon_weather_cond = new TextView(getActivity());
+        TextView mon_temp_info = new TextView(getActivity());
 
-        // Set up monday
-        monday.setText("Monday");
-        monday_weather.setImageResource(R.drawable.sun);
-        monday_weather_des.setText("Heavy Rain");
-        monday_temperature_des.setText("26\u00B0 21\u00B0");
+        mon.setText("Monday");
+        mon_weather.setImageResource(R.drawable.storm);
+        mon_weather_cond.setText("Storm");
+        mon_temp_info.setText("26\u00B0 21\u00B0");
 
-
-        monday_layout.addView(monday);
-        monday_layout.addView(monday_weather);
-        monday_layout.addView(monday_descriptions);
-        monday_descriptions.addView(monday_weather_des);
-        monday_descriptions.addView(monday_temperature_des);
+        mon_layout.addView(mon);
+        mon_layout.addView(mon_weather);
+        mon_layout.addView(mon_descriptions);
+        mon_descriptions.addView(mon_weather_cond);
+        mon_descriptions.addView(mon_temp_info);
 
         // Tuesday layout
-        LinearLayout tuesday_layout = new LinearLayout(getActivity());
-        tuesday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView tuesday = new TextView(getActivity());
-        ImageView tuesday_weather = new ImageView(getActivity());
-        LinearLayout tuesday_descriptions = new LinearLayout(getActivity());
-        tuesday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView tuesday_weather_des = new TextView(getActivity());
-        TextView tuesday_temperature_des = new TextView(getActivity());
+        LinearLayout tue_layout = new LinearLayout(getActivity());
+        tue_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView tue = new TextView(getActivity());
+        ImageView tue_weather = new ImageView(getActivity());
+        LinearLayout tue_descriptions = new LinearLayout(getActivity());
+        tue_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView tue_weather_cond = new TextView(getActivity());
+        TextView tue_temp_info = new TextView(getActivity());
 
-        tuesday.setText("Tuesday");
-        tuesday_weather.setImageResource(R.drawable.sun);
-        tuesday_weather_des.setText("Sunny");
-        tuesday_temperature_des.setText("31\u00B0 25\u00B0");
+        tue.setText("Tuesday");
+        tue_weather.setImageResource(R.drawable.sun);
+        tue_weather_cond.setText("Sunny");
+        tue_temp_info.setText("31\u00B0 25\u00B0");
 
-        tuesday_layout.addView(tuesday);
-        tuesday_layout.addView(tuesday_weather);
-        tuesday_layout.addView(tuesday_descriptions);
-        tuesday_descriptions.addView(tuesday_weather_des);
-        tuesday_descriptions.addView(tuesday_temperature_des);
+        tue_layout.addView(tue);
+        tue_layout.addView(tue_weather);
+        tue_layout.addView(tue_descriptions);
+        tue_descriptions.addView(tue_weather_cond);
+        tue_descriptions.addView(tue_temp_info);
 
 
         // Wednesday layout
-        LinearLayout wednesday_layout = new LinearLayout(getActivity());
-        wednesday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView wednesday = new TextView(getActivity());
-        ImageView wednesday_weather = new ImageView(getActivity());
-        LinearLayout wednesday_descriptions = new LinearLayout(getActivity());
-        wednesday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView wednesday_weather_des = new TextView(getActivity());
-        TextView wednesday_temperature_des = new TextView(getActivity());
+        LinearLayout wed_layout = new LinearLayout(getActivity());
+        wed_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView wed = new TextView(getActivity());
+        ImageView wed_weather = new ImageView(getActivity());
+        LinearLayout wed_descriptions = new LinearLayout(getActivity());
+        wed_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView wed_weather_cond = new TextView(getActivity());
+        TextView wed_temp_info = new TextView(getActivity());
 
-        wednesday.setText("Wednesday");
-        wednesday_weather.setImageResource(R.drawable.sun);
-        wednesday_weather_des.setText("Light Rain");
-        wednesday_temperature_des.setText("32\u00B0 24\u00B0");
+        wed.setText("Wednesday");
+        wed_weather.setImageResource(R.drawable.cloud);
+        wed_weather_cond.setText("Cloudy");
+        wed_temp_info.setText("32\u00B0 24\u00B0");
 
-        wednesday_layout.addView(wednesday);
-        wednesday_layout.addView(wednesday_weather);
-        wednesday_layout.addView(wednesday_descriptions);
-        wednesday_descriptions.addView(wednesday_weather_des);
-        wednesday_descriptions.addView(wednesday_temperature_des);
+        wed_layout.addView(wed);
+        wed_layout.addView(wed_weather);
+        wed_layout.addView(wed_descriptions);
+        wed_descriptions.addView(wed_weather_cond);
+        wed_descriptions.addView(wed_temp_info);
 
 
         // Thursday layout
-        LinearLayout thursday_layout = new LinearLayout(getActivity());
-        thursday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView thursday = new TextView(getActivity());
-        ImageView thursday_weather = new ImageView(getActivity());
-        LinearLayout thursday_descriptions = new LinearLayout(getActivity());
-        thursday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView thursday_weather_des = new TextView(getActivity());
-        TextView thursday_temperature_des = new TextView(getActivity());
+        LinearLayout thu_layout = new LinearLayout(getActivity());
+        thu_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView thu = new TextView(getActivity());
+        ImageView thu_weather = new ImageView(getActivity());
+        LinearLayout thu_descriptions = new LinearLayout(getActivity());
+        thu_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView thu_weather_cond = new TextView(getActivity());
+        TextView thu_temp_info = new TextView(getActivity());
 
-        thursday.setText("Thursday");
-        thursday_weather.setImageResource(R.drawable.sun);
-        thursday_weather_des.setText("Sunny");
-        thursday_temperature_des.setText("34\u00B0 25\u00B0");
+        thu.setText("Thursday");
+        thu_weather.setImageResource(R.drawable.sun);
+        thu_weather_cond.setText("Sunny");
+        thu_temp_info.setText("34\u00B0 25\u00B0");
 
-        thursday_layout.addView(thursday);
-        thursday_layout.addView(thursday_weather);
-        thursday_layout.addView(thursday_descriptions);
-        thursday_descriptions.addView(thursday_weather_des);
-        thursday_descriptions.addView(thursday_temperature_des);
+        thu_layout.addView(thu);
+        thu_layout.addView(thu_weather);
+        thu_layout.addView(thu_descriptions);
+        thu_descriptions.addView(thu_weather_cond);
+        thu_descriptions.addView(thu_temp_info);
 
 
         // Friday layout
-        LinearLayout friday_layout = new LinearLayout(getActivity());
-        friday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView friday = new TextView(getActivity());
-        ImageView friday_weather = new ImageView(getActivity());
-        LinearLayout friday_descriptions = new LinearLayout(getActivity());
-        friday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView friday_weather_des = new TextView(getActivity());
-        TextView friday_temperature_des = new TextView(getActivity());
+        LinearLayout fri_layout = new LinearLayout(getActivity());
+        fri_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView fri = new TextView(getActivity());
+        ImageView fri_weather = new ImageView(getActivity());
+        LinearLayout fri_descriptions = new LinearLayout(getActivity());
+        fri_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView fri_weather_cond = new TextView(getActivity());
+        TextView fri_temp_info = new TextView(getActivity());
 
-        friday.setText("Friday");
-        friday_weather.setImageResource(R.drawable.sun);
-        friday_weather_des.setText("Sunny");
-        friday_temperature_des.setText("33\u00B0 24\u00B0");
+        fri.setText("Friday");
+        fri_weather.setImageResource(R.drawable.sun);
+        fri_weather_cond.setText("Sunny");
+        fri_temp_info.setText("36\u00B0 27\u00B0");
 
-        friday_layout.addView(friday);
-        friday_layout.addView(friday_weather);
-        friday_layout.addView(friday_descriptions);
-        friday_descriptions.addView(friday_weather_des);
-        friday_descriptions.addView(friday_temperature_des);
+        fri_layout.addView(fri);
+        fri_layout.addView(fri_weather);
+        fri_layout.addView(fri_descriptions);
+        fri_descriptions.addView(fri_weather_cond);
+        fri_descriptions.addView(fri_temp_info);
 
 
         // Saturday layout
-        LinearLayout saturday_layout = new LinearLayout(getActivity());
-        saturday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView saturday = new TextView(getActivity());
-        ImageView saturday_weather = new ImageView(getActivity());
-        LinearLayout saturday_descriptions = new LinearLayout(getActivity());
-        saturday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView saturday_weather_des = new TextView(getActivity());
-        TextView saturday_temperature_des = new TextView(getActivity());
+        LinearLayout sat_layout = new LinearLayout(getActivity());
+        sat_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView sat = new TextView(getActivity());
+        ImageView sat_weather = new ImageView(getActivity());
+        LinearLayout sat_descriptions = new LinearLayout(getActivity());
+        sat_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView sat_weather_cond = new TextView(getActivity());
+        TextView sat_temp_info = new TextView(getActivity());
 
-        saturday.setText("Saturday");
-        saturday_weather.setImageResource(R.drawable.sun);
-        saturday_weather_des.setText("Light rain");
-        saturday_temperature_des.setText("31\u00B0 24\u00B0");
+        sat.setText("Saturday");
+        sat_weather.setImageResource(R.drawable.storm);
+        sat_weather_cond.setText("Light rain");
+        sat_temp_info.setText("29\u00B0 24\u00B0");
 
-        saturday_layout.addView(saturday);
-        saturday_layout.addView(saturday_weather);
-        saturday_layout.addView(saturday_descriptions);
-        saturday_descriptions.addView(saturday_weather_des);
-        saturday_descriptions.addView(saturday_temperature_des);
+        sat_layout.addView(sat);
+        sat_layout.addView(sat_weather);
+        sat_layout.addView(sat_descriptions);
+        sat_descriptions.addView(sat_weather_cond);
+        sat_descriptions.addView(sat_temp_info);
 
 
         // Sunday layout
-        LinearLayout sunday_layout = new LinearLayout(getActivity());
-        sunday_layout.setOrientation(LinearLayout.HORIZONTAL);
-        TextView sunday = new TextView(getActivity());
-        ImageView sunday_weather = new ImageView(getActivity());
-        LinearLayout sunday_descriptions = new LinearLayout(getActivity());
-        sunday_descriptions.setOrientation(LinearLayout.VERTICAL);
-        TextView sunday_weather_des = new TextView(getActivity());
-        TextView sunday_temperature_des = new TextView(getActivity());
+        LinearLayout sun_layout = new LinearLayout(getActivity());
+        sun_layout.setOrientation(LinearLayout.HORIZONTAL);
+        TextView sun = new TextView(getActivity());
+        ImageView sun_weather = new ImageView(getActivity());
+        LinearLayout sun_descriptions = new LinearLayout(getActivity());
+        sun_descriptions.setOrientation(LinearLayout.VERTICAL);
+        TextView sun_weather_cond = new TextView(getActivity());
+        TextView sun_temp_info = new TextView(getActivity());
 
-        sunday.setText("Sunday");
-        sunday_weather.setImageResource(R.drawable.sun);
-        sunday_weather_des.setText("Heavy rain");
-        sunday_temperature_des.setText("29\u00B0 23\u00B0");
+        sun.setText("Sunday");
+        sun_weather.setImageResource(R.drawable.storm);
+        sun_weather_cond.setText("Heavy rain");
+        sun_temp_info.setText("29\u00B0 23\u00B0");
 
-        sunday_layout.addView(sunday);
-        sunday_layout.addView(sunday_weather);
-        sunday_layout.addView(sunday_descriptions);
-        sunday_descriptions.addView(sunday_weather_des);
-        sunday_descriptions.addView(sunday_temperature_des);
+        sun_layout.addView(sun);
+        sun_layout.addView(sun_weather);
+        sun_layout.addView(sun_descriptions);
+        sun_descriptions.addView(sun_weather_cond);
+        sun_descriptions.addView(sun_temp_info);
 
 
         // add to main layout
-        main_layout.addView(monday_layout);
-        main_layout.addView(tuesday_layout);
-        main_layout.addView(wednesday_layout);
-        main_layout.addView(thursday_layout);
-        main_layout.addView(friday_layout);
-        main_layout.addView(saturday_layout);
-        main_layout.addView(sunday_layout);
+        mainlayout.addView(mon_layout);
+        mainlayout.addView(tue_layout);
+        mainlayout.addView(wed_layout);
+        mainlayout.addView(thu_layout);
+        mainlayout.addView(fri_layout);
+        mainlayout.addView(sat_layout);
+        mainlayout.addView(sun_layout);
 
-        return main_layout;
+        return mainlayout;
     }
 }
