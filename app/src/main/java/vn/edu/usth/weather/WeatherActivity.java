@@ -7,7 +7,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WeatherActivity extends AppCompatActivity {
-    private static final String TAG = "WeatherActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,13 +14,11 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-//        TextView mTextView = (TextView) findViewById(R.id.text_message);
-//        mTextView.setText("Hello World!");
 
         ForecastFragment ff = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.container, ff).commit();
 
-        Log.i(TAG, "Create");
+        Log.i("WeatherActivity", "Create");
 
     }
 
@@ -29,41 +26,41 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        Log.i(TAG, "Start");
+        Log.i("WeatherActivity", "Start");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        Log.i(TAG, "Resume");
+        Log.i("WeatherActivity", "Resume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        Log.i(TAG, "Pause");
+        Log.i("WeatherActivity", "Pause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-        Log.i(TAG, "Stop");
+        Log.i("WeatherActivity", "Stop");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
 
-        Log.i(TAG, "Restart");
+        Log.i("WeatherActivity", "Restart");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        Log.i(TAG, "Destroy");
+        Log.i("WeatherActivity", "Destroy");
     }
 }
