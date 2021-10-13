@@ -19,7 +19,6 @@ public class WeatherActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.container, ff).commit();
 
         Log.i("WeatherActivity", "Create");
-
     }
 
     @Override
