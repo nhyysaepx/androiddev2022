@@ -2,9 +2,12 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -14,10 +17,25 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
+        TabLayout tablayout = findViewById(R.id.tab_layout);
+        ViewPager2 pager2 = findViewById(R.id.view_pager);
 
-        ForecastFragment ff = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.container, ff).commit();
+        WeatherFragmentAdapter adapter = new WeatherFragmentAdapter(this);
+        pager2.setAdapter(adapter);
 
+        new TabLayoutMediator(tablayout, pager2, (tab, position) -> {
+            switch (position) {
+                case 0:
+                    tab.setText("Ha Noi");
+                    break;
+                case 1:
+                    tab.setText("Paris");
+                    break;
+                case 2:
+                    tab.setText("London");
+                    break;
+            }
+        }).attach();
         Log.i("WeatherActivity", "Create");
     }
 
