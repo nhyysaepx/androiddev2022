@@ -29,10 +29,10 @@ public class WeatherActivity extends AppCompatActivity {
                     tab.setText("Ha Noi");
                     break;
                 case 1:
-                    tab.setText("Paris");
+                    tab.setText("Thanh ");
                     break;
                 case 2:
-                    tab.setText("London");
+                    tab.setText("Sai Gon");
                     break;
             }
         }).attach();
