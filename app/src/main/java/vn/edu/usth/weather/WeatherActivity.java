@@ -29,7 +29,7 @@ public class WeatherActivity extends AppCompatActivity {
                     tab.setText("Ha Noi");
                     break;
                 case 1:
-                    tab.setText("Thanh ");
+                    tab.setText("Thanh Hoa");
                     break;
                 case 2:
                     tab.setText("Sai Gon");

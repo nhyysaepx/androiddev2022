@@ -1,14 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ForecastFragment">
+    tools:context=".ForecastFragment"
+    android:orientation="vertical"
+    android:id="@+id/forecast">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Weather" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mon">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Monday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/storm"
+            android:id="@+id/mon_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/mon_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heavy Rain"
+                android:id="@+id/mon_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15 - 20"
+                android:id="@+id/mon_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/tue">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Tuesday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/storm"
+            android:id="@+id/tue_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/tue_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rain"
+                android:id="@+id/tue_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19 - 24"
+                android:id="@+id/tue_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wed">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Wednesday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/storm"
+            android:id="@+id/wed_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/wed_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:id="@+id/wed_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 - 32"
+                android:id="@+id/wed_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/thu">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Thursday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/sun"
+            android:id="@+id/thu_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/thu_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:id="@+id/thu_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28 - 35"
+                android:id="@+id/thu_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/fri">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Friday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/sun"
+            android:id="@+id/fri_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/fri_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:id="@+id/fri_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28 - 36"
+                android:id="@+id/fri_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sat">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Saturday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/sun"
+            android:id="@+id/sat_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/sat_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:id="@+id/sat_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28 - 37"
+                android:id="@+id/sat_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sun">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Sunday"/>
+
+        <ImageView
+            android:layout_width="16pt"
+            android:layout_weight="1"
+            android:layout_height="24pt"
+            android:src="@drawable/sun"
+            android:id="@+id/sun_forecast_weather"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/sun_forecast_des">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:id="@+id/sun_forecast_weather_des"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28 - 39"
+                android:id="@+id/sun_forecast_temperature_des"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
